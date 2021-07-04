@@ -127,13 +127,13 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(DEVIL_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_USERNAME ),reply_markup=InlineKeyboardMarkup(
-                                                  [[InlineKeyboardButton(text="♻️Stream Channel",url="https://telegram.dog/Movies_stream"),InlineKeyboardButton(text="📺TV Series Channel",url="https://telegram.dog/TVSeries_FC")],
+                                                  [[InlineKeyboardButton(text="🧿GROUP🧿",url="https://telegram.dog/Movies_stream"),InlineKeyboardButton(text="📺TV Series Channel",url="https://telegram.dog/TVSeries_FC")],
                                                 [InlineKeyboardButton(text="🎬Film Group",url="https://telegram.dog/filmclublovers"),InlineKeyboardButton(text="💠HEVC Channel",url="https://telegram.dog/FC_HEVC")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
     else:
          
 
         update.effective_message.reply_text("Heya, How can I help you? 🙂",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text="♻️ Mai Repo",url="https://github.com/jikkubot")]]))
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text="♻️ Mai Repo",url="https://github.com/akhilchandran-TG")]]))
                                   
 # for test purposes
 def error_callback(bot, update, error):
